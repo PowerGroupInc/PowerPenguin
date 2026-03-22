@@ -2,7 +2,7 @@ import cv2
 import mediapipe as mp
 import numpy as np
 import time
-import winsound
+#import winsound
 import threading
 
 #  TUNED THRESHOLDS (based on the testing so far)
@@ -54,11 +54,11 @@ ALERT_COOLDOWN  = 3  # seconds
 
 def play_alert_sound():
     for _ in range(3):  # beep 3 times
-        winsound.Beep(1000, 500)  # frequency=1000Hz, duration=500ms
+#        winsound.Beep(1000, 500)  # frequency=1000Hz, duration=500ms
         time.sleep(0.2)
 print("PowerPenguin Drowsiness Detector Started")
 print("Press Q to quit")
-print("─" * 40)
+print("-" * 40)
 
 #  MAIN LOOP
 with mp_face.FaceMesh(
